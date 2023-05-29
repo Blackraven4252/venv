@@ -13,7 +13,9 @@ def text():
                  "Один из способов борьбы с технологической зависимостью - это поиск занятий, которые приносят удовольствие и улучшают настроение.",
                  "Илон Маск утверждает, что социальные сети созданы для того, чтобы удерживать нас внутри платформы, чтобы мы тратили как можно больше времени на просмотр контента.",
                  "Социальные сети имеют как позитивные, так и негативные стороны, и мы должны быть более осознанными в использовании этих платформ."
-                 ]
-
-    return f"<p>{ random.choice(text_list)}</p>"
+                ]
+    return f"<p>{ random.choice(text_list)}</p><a href = '/random_fact/3str'>Жми сюда</a>"
+@app.route("/random_fact/3str")
+def threestr():
+    return"<p>Когда ты без интернета</p><img scr=https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.meme-arsenal.com%2Fcreate%2Ftemplate%2F3093030&psig=AOvVaw1IfAAlC5FKJgpN7GtqCqNB&ust=1685475933642000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKDK8qilm_8CFQAAAAAdAAAAABAJ="
 app.run(debug=True)
